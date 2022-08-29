@@ -1,0 +1,9 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "@themes/variables.scss";
+
+
+.test {
+    color :$test;
+}
