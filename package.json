@@ -1,12 +1,10 @@
 {
   "name": "frontend",
   "version": "0.0.0",
-  "browserslist": [
-    "since 2018 and not dead, node 16"
-  ],
+  "browserslist": ["since 2018 and not dead, node 16"],
   "scripts": {
-    "dev": "cross-env PORT=8085 THEME=theme-1 node server.mjs",
-    "start": "cross-env NODE_ENV=stag PORT=8085 THEME=theme-1  node server.mjs",
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
     "build:client": "vite build --ssrManifest --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.js --outDir dist/server",
     "build": " cross-env THEME=theme-1 npm run build:client && cross-env THEME=theme-1  npm run build:server",
